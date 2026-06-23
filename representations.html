@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="el" data-page="representations">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Εκπροσωπήσεις & συνεργασίες της ΑΝΑΠΛΟΥΣ με φορείς και οργανισμούς στον χώρο του πολιτισμού." />
+  <title>ΑΝΑΠΛΟΥΣ | Βασιλεία Κατσάνη</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Α</span>
+        <span class="brand-text">
+          <strong>ΑΝΑΠΛΟΥΣ</strong>
+          <em data-i18n="brand.role">Πολιτισμός &middot; Εκπαίδευση &middot; Επικοινωνία</em>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="index.html" data-i18n="nav.home">Αρχική</a></li>
+          <li><a href="profile.html" data-i18n="nav.profile">Προφίλ</a></li>
+          <li><a href="areas.html" data-i18n="nav.areas">Δραστηριότητα</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Παραγωγές &amp; Νέα</a></li>
+          <li><a href="publications.html" data-i18n="nav.publications">Εκδόσεις</a></li>
+          <li><a href="representations.html" aria-current="page" data-i18n="nav.representations">Εκπροσωπήσεις</a></li>
+          <li><a href="contact.html" class="nav-cta" data-i18n="nav.contact">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" aria-label="Επιλογή γλώσσας">
+        <button class="lang active" data-lang="el">ΕΛ</button>
+        <button class="lang" data-lang="en">EN</button>
+        <button class="lang" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ REPRESENTATIONS ============ -->
+    <section class="section page-intro" id="representations">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="rep.eyebrow">Εκπροσωπήσεις</p>
+          <h2 data-i18n="rep.title">Συνεργασίες &amp; εκπροσωπήσεις</h2>
+        </header>
+        <div class="logos">
+          <div class="logo-box">
+            <img class="img-fade" src="assets/logo-1.png" alt="Συνεργάτης 1" loading="lazy" />
+            <span data-fallback>Συνεργάτης 1</span>
+          </div>
+          <div class="logo-box">
+            <img class="img-fade" src="assets/logo-2.png" alt="Συνεργάτης 2" loading="lazy" />
+            <span data-fallback>Συνεργάτης 2</span>
+          </div>
+          <div class="logo-box">
+            <img class="img-fade" src="assets/logo-3.png" alt="Συνεργάτης 3" loading="lazy" />
+            <span data-fallback>Συνεργάτης 3</span>
+          </div>
+          <div class="logo-box">
+            <img class="img-fade" src="assets/logo-4.png" alt="Συνεργάτης 4" loading="lazy" />
+            <span data-fallback>Συνεργάτης 4</span>
+          </div>
+          <div class="logo-box">
+            <img class="img-fade" src="assets/logo-5.png" alt="Συνεργάτης 5" loading="lazy" />
+            <span data-fallback>Συνεργάτης 5</span>
+          </div>
+          <div class="logo-box">
+            <img class="img-fade" src="assets/logo-6.png" alt="Συνεργάτης 6" loading="lazy" />
+            <span data-fallback>Συνεργάτης 6</span>
+          </div>
+        </div>
+        <blockquote class="testimonial">
+          <span data-i18n="rep.quote">«Η ΑΝΑΠΛΟΥΣ μετατρέπει το πολιτιστικό όραμα σε ουσιαστικό αποτέλεσμα,
+          με συνέπεια και δημιουργικότητα.»</span>
+          <cite data-i18n="rep.cite">— Συνεργαζόμενος φορέας</cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> ΑΝΑΠΛΟΥΣ &middot; Βασιλεία Κατσάνη — <span data-i18n="footer.copy">Με την επιφύλαξη παντός δικαιώματος.</span></p>
+      <nav class="footer-nav">
+        <a href="profile.html" data-i18n="footer.profile">Προφίλ</a>
+        <a href="areas.html" data-i18n="footer.areas">Δραστηριότητα</a>
+        <a href="contact.html" data-i18n="footer.contact">Επικοινωνία</a>
+        <a href="#" data-i18n="footer.terms">Όροι Χρήσης</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c3354"/>
+      <stop offset="1" stop-color="#11223a"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26405f"/>
+      <stop offset="1" stop-color="#15263f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="600" fill="url(#bg)"/>
+
+  <!-- soft halo -->
+  <circle cx="240" cy="232" r="190" fill="#ffffff" opacity="0.03"/>
+
+  <!-- shoulders -->
+  <path d="M70 600 C 70 452 150 392 240 392 C 330 392 410 452 410 600 Z" fill="url(#figure)"/>
+
+  <!-- collar / lapel accent -->
+  <path d="M240 392 L 205 470 L 240 600 L 275 470 Z" fill="#0b1828" opacity="0.55"/>
+  <path d="M205 470 L 240 600 M275 470 L 240 600" stroke="#b08d57" stroke-width="2" opacity="0.5" fill="none"/>
+
+  <!-- head -->
+  <circle cx="240" cy="250" r="92" fill="url(#figure)"/>
+
+  <!-- gold ring -->
+  <circle cx="240" cy="232" r="186" fill="none" stroke="#b08d57" stroke-width="1.5" opacity="0.45"/>
+
+  <text x="240" y="556" text-anchor="middle"
+        font-family="Cormorant Garamond, Georgia, serif" font-size="22"
+        letter-spacing="3" fill="#c9a86c" opacity="0.8">PORTRAIT</text>
+</svg>

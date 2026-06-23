@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="el" data-page="publications">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Εκδόσεις & δημοσιεύσεις — εκδοτικό έργο της ΑΝΑΠΛΟΥΣ γύρω από τον πολιτισμό, την εκπαίδευση και την επικοινωνία." />
+  <title>ΑΝΑΠΛΟΥΣ | Βασιλεία Κατσάνη</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Α</span>
+        <span class="brand-text">
+          <strong>ΑΝΑΠΛΟΥΣ</strong>
+          <em data-i18n="brand.role">Πολιτισμός &middot; Εκπαίδευση &middot; Επικοινωνία</em>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="index.html" data-i18n="nav.home">Αρχική</a></li>
+          <li><a href="profile.html" data-i18n="nav.profile">Προφίλ</a></li>
+          <li><a href="areas.html" data-i18n="nav.areas">Δραστηριότητα</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Παραγωγές &amp; Νέα</a></li>
+          <li><a href="publications.html" aria-current="page" data-i18n="nav.publications">Εκδόσεις</a></li>
+          <li><a href="representations.html" data-i18n="nav.representations">Εκπροσωπήσεις</a></li>
+          <li><a href="contact.html" class="nav-cta" data-i18n="nav.contact">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" aria-label="Επιλογή γλώσσας">
+        <button class="lang active" data-lang="el">ΕΛ</button>
+        <button class="lang" data-lang="en">EN</button>
+        <button class="lang" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section page-intro" id="publications">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="pub.eyebrow">Εκδόσεις</p>
+          <h2 data-i18n="pub.title">Εκδόσεις &amp; δημοσιεύσεις</h2>
+          <p class="section-sub" data-i18n="pub.sub">Εκδοτικό έργο και δημοσιεύσεις γύρω από τον πολιτισμό και την επικοινωνία.</p>
+        </header>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-year">01</span>
+            <div>
+              <h3 data-i18n="pub.t1">«Πολιτιστική επιχειρηματικότητα &amp; ανάπτυξη»</h3>
+              <p data-i18n="pub.p1">Έκδοση για τη σύνδεση του πολιτισμού με την οικονομική ανάπτυξη.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pub-year">02</span>
+            <div>
+              <h3 data-i18n="pub.t2">«Τέχνη, εκπαίδευση &amp; κοινωνία»</h3>
+              <p data-i18n="pub.p2">Συλλογικός τόμος για τον ρόλο της τέχνης στην εκπαίδευση.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pub-year">03</span>
+            <div>
+              <h3 data-i18n="pub.t3">«Στρατηγική επικοινωνία στον πολιτισμό»</h3>
+              <p data-i18n="pub.p3">Άρθρα και αναλύσεις για τη σύγχρονη πολιτιστική επικοινωνία.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> ΑΝΑΠΛΟΥΣ &middot; Βασιλεία Κατσάνη — <span data-i18n="footer.copy">Με την επιφύλαξη παντός δικαιώματος.</span></p>
+      <nav class="footer-nav">
+        <a href="profile.html" data-i18n="footer.profile">Προφίλ</a>
+        <a href="areas.html" data-i18n="footer.areas">Δραστηριότητα</a>
+        <a href="contact.html" data-i18n="footer.contact">Επικοινωνία</a>
+        <a href="#" data-i18n="footer.terms">Όροι Χρήσης</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

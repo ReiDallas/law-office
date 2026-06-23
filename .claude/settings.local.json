@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.anaplous.net)",
+      "Bash(curl -s -o /dev/null -w \"svg:%{http_code}\\\\n\" http://localhost:5173/assets/portrait.svg)",
+      "Bash(curl -s -o /dev/null -w \"html:%{http_code}\\\\n\" http://localhost:5173/index.html)",
+      "Bash(curl -s -o /dev/null -w \"index.html -> %{http_code}\\\\n\" http://localhost:5173/index.html)",
+      "Bash(start \"\" \"http://localhost:5173/index.html\")",
+      "Bash(cmd //c start \"\" \"http://localhost:5173/index.html\")",
+      "Bash(curl -s -o /dev/null -w \"portrait.svg -> %{http_code}\\\\n\" http://localhost:5173/assets/portrait.svg)",
+      "Read(//c/Users/zeusr/.cc-switch/**)",
+      "Bash(winget install *)"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="el" data-page="contact">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Επικοινωνία — διεύθυνση, τηλέφωνο, email και φόρμα επικοινωνίας της ΑΝΑΠΛΟΥΣ." />
+  <title>ΑΝΑΠΛΟΥΣ | Βασιλεία Κατσάνη</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Α</span>
+        <span class="brand-text">
+          <strong>ΑΝΑΠΛΟΥΣ</strong>
+          <em data-i18n="brand.role">Πολιτισμός &middot; Εκπαίδευση &middot; Επικοινωνία</em>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="index.html" data-i18n="nav.home">Αρχική</a></li>
+          <li><a href="profile.html" data-i18n="nav.profile">Προφίλ</a></li>
+          <li><a href="areas.html" data-i18n="nav.areas">Δραστηριότητα</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Παραγωγές &amp; Νέα</a></li>
+          <li><a href="publications.html" data-i18n="nav.publications">Εκδόσεις</a></li>
+          <li><a href="representations.html" data-i18n="nav.representations">Εκπροσωπήσεις</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page" data-i18n="nav.contact">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" aria-label="Επιλογή γλώσσας">
+        <button class="lang active" data-lang="el">ΕΛ</button>
+        <button class="lang" data-lang="en">EN</button>
+        <button class="lang" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark" id="contact">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow light" data-i18n="contact.eyebrow">Επικοινωνία</p>
+          <h2 data-i18n="contact.title">Ας συνεργαστούμε</h2>
+          <p class="contact-intro" data-i18n="contact.intro">
+            Επικοινωνήστε μαζί μας για συνεργασίες, παραγωγές ή προγράμματα.
+            Θα χαρούμε να συζητήσουμε το όραμά σας.
+          </p>
+          <ul class="contact-details">
+            <li><span data-i18n="contact.addr">Διεύθυνση</span>[Οδός Αριθμός, Τ.Κ., Πόλη]</li>
+            <li><span data-i18n="contact.phone">Τηλέφωνο</span><a href="tel:+302100000000">+30 210 0000 000</a></li>
+            <li><span data-i18n="contact.email">Email</span><a href="mailto:info@anaplous.net">info@anaplous.net</a></li>
+            <li><span data-i18n="contact.hours">Ώρες</span><span data-i18n="contact.hoursVal">Δευτέρα–Παρασκευή, 09:00–18:00</span></li>
+          </ul>
+        </div>
+        <form class="contact-form" novalidate>
+          <div class="field">
+            <label for="name" data-i18n="form.name">Ονοματεπώνυμο</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="form.email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="phone" data-i18n="form.phone">Τηλέφωνο</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message">Μήνυμα</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="form.submit">Αποστολή</button>
+          <p class="form-note" hidden data-i18n="form.note">Σας ευχαριστούμε! Το μήνυμά σας στάλθηκε.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> ΑΝΑΠΛΟΥΣ &middot; Βασιλεία Κατσάνη — <span data-i18n="footer.copy">Με την επιφύλαξη παντός δικαιώματος.</span></p>
+      <nav class="footer-nav">
+        <a href="profile.html" data-i18n="footer.profile">Προφίλ</a>
+        <a href="areas.html" data-i18n="footer.areas">Δραστηριότητα</a>
+        <a href="contact.html" data-i18n="footer.contact">Επικοινωνία</a>
+        <a href="#" data-i18n="footer.terms">Όροι Χρήσης</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
