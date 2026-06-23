@@ -108,6 +108,17 @@
     }
   });
 
+  /* ---------- Optional hero background image ----------
+     If assets/hero.jpg exists, switch the hero to an image treatment
+     (dark overlay + light text via the .has-hero-image class). If the
+     file is missing, nothing happens and the light hero stays. */
+  var hero = document.querySelector(".hero");
+  if (hero) {
+    var heroProbe = new Image();
+    heroProbe.onload = function () { hero.classList.add("has-hero-image"); };
+    heroProbe.src = "assets/hero.jpg";
+  }
+
   /* ============================================================
      i18n — EL / EN / FR
      Translatable nodes carry data-i18n="key".

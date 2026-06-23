@@ -331,6 +331,27 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================================
+   OPTIONAL HERO IMAGE
+   Off by default (light hero). main.js adds .has-hero-image only
+   if assets/hero.jpg loads, switching to a dark overlay + light
+   text so the heading stays readable over any photo.
+   ============================================================ */
+.hero.has-hero-image {
+  background:
+    linear-gradient(180deg, rgba(11, 24, 40, .72), rgba(11, 24, 40, .82)),
+    url("../assets/hero.jpg") center / cover no-repeat;
+}
+.hero.has-hero-image .eyebrow { color: var(--gold-light); }
+.hero.has-hero-image h1 { color: #fff; }
+.hero.has-hero-image .lead { color: rgba(255, 255, 255, .85); }
+.hero.has-hero-image .hero-stats { border-top-color: rgba(255, 255, 255, .22); }
+.hero.has-hero-image .hero-stats strong { color: #fff; }
+.hero.has-hero-image .hero-stats span { color: rgba(255, 255, 255, .72); }
+.hero.has-hero-image::after { border-color: rgba(255, 255, 255, .25); opacity: .5; }
+.hero.has-hero-image .btn-ghost { border-color: rgba(255, 255, 255, .6); color: #fff; }
+.hero.has-hero-image .btn-ghost:hover { background: #fff; color: var(--navy); }
+
+/* ============================================================
    Reveal-on-scroll
    ============================================================ */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
